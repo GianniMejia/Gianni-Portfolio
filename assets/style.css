@@ -1,18 +1,19 @@
 
 body {
     color: rgb(36, 36, 114);
-    background-color: white;
+    background-color: lightgray;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-decoration-line: underline;
+  
 }
 header  h1 {
     padding: 10px; 
     width:20%;
-    background-color: gold;
     color: rgb(36, 36, 114);
 }
 header nav { 
@@ -37,25 +38,33 @@ header nav a {
 }
 
 .about-me {
-   
     color: rgb(36, 36, 114);
+}
+
+.about-me > h2 {
+    text-decoration-line: underline;
+}
+
+.about-me > p {
+    display: flex;
+    text-align: center;
 }
 
 .work {
-  
     color: rgb(36, 36, 114);
+}
+
+.work > h2 {
+    text-decoration-line: underline;
 }
 
 .contact {
-    
     color: rgb(36, 36, 114);
 }
 
-.resume{
-   
-    color: rgb(36, 36, 114);
+.contact-me > h2 {
+    text-decoration-line: underline;
 }
-
 
 
 .allWork {
@@ -70,21 +79,51 @@ header nav a {
     text-decoration: none;
 }
 
-.workImg{
-    width:200px; 
-    height:200px;
+.runbuddyImg{
+    width: 400px; 
+    height: 400px;
     background-image: url("./runbuddy.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-
 .workImg > h3 {
-   padding-top: 65%;
+   padding-top: 75%;
 }
 .workImg > p{
-    color: red;
+    color: black;
+}
+
+.comingsoonImg {
+    width: 200px; 
+    height: 200px;
+    background-image: url("./coming-soon.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comingsoonImg > h3 {
+    padding-top: 65%;
+}
+
+.comingsoonImg > p {
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    .workImg{
+        width: 175px; 
+    height: 175px;
+    }
+    .about-me > p{
+        width: 175px;
+        height: 175px;
+        margin-left: 30%;
+        text-align: right;
+    }
+    
 }
 
 @media screen and (max-width: 575px) {
@@ -92,4 +131,9 @@ header nav a {
         width: 150px; 
     height: 150px;
     }
+    .about-me{
+        width: 150px;
+        height: 150px;
+    }
+
 }
